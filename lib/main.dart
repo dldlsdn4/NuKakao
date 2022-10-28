@@ -36,11 +36,24 @@ class _MyHomePageState extends State<MyHomePage> {
           Navigator.push(context, MaterialPageRoute(builder: (context) => const NakaoLogin()));
         },
         child: Container(
-          padding: const EdgeInsets.fromLTRB(40, 10, 40, 10),
-          color: Colors.yellowAccent,
-          child: const Text(
-            "Kakao Login",
-            style: TextStyle(fontSize: 15),
+          padding: const EdgeInsets.fromLTRB(20, 5, 40, 5),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(100),
+            border: Border.all(
+              width: 1,
+              color: Colors.black,
+            ),
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Container(width: 50, child: Image.asset("assets/kakaoicon.png", fit: BoxFit.fill)),
+              SizedBox(width: 5),
+              const Text(
+                "Kakao Login",
+                style: TextStyle(fontSize: 15),
+              ),
+            ],
           ),
         ),
       )),

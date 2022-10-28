@@ -12,7 +12,10 @@ class _NakaoLoginState extends State<NakaoLogin> {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        child: Text("Nukao login page"),
+        child: Text(
+          "Nukao login page",
+          style: TextStyle(color: Colors.white, fontSize: 15),
+        ),
       ),
     );
   }
