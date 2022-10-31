@@ -8,7 +8,7 @@
 PRODUCT_NAME = nukakao
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.example.nukakao
+PRODUCT_BUNDLE_IDENTIFIER = com.nu.nukakao
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2022 com.example. All rights reserved.

@@ -1,4 +1,4 @@
-package com.example.nukakao
+package com.nu.nukakao
 
 import io.flutter.embedding.android.FlutterActivity
 
