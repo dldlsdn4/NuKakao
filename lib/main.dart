@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:kakao_flutter_sdk_user/kakao_flutter_sdk_user.dart';
 import 'package:nukakao/login.dart';
 import 'package:nukakao/resources/app_theme.dart';
 
 void main() {
+  KakaoSdk.init(nativeAppKey: '07ea8b5dfa48d24cbe5acef8da0cc1ed');
   runApp(const MyApp());
 }
 
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
-      darkTheme: AppTheme.darkTheme,
+      // darkTheme: AppTheme.darkTheme,
       home: const MyHomePage(),
     );
   }
