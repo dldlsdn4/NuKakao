@@ -20,9 +20,9 @@ class _NakaoLoginState extends State<NakaoLogin> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Image.network(vm.user?.kakaoAccount?.profile?.profileImageUrl ?? ""),
-            Text("${vm.isLogined}"),
-            Text("${vm.user?.id}"),
+            Container(width: 200, height: 200, color: Colors.amberAccent, child: vm.user != null ? Image.network(vm.user?.kakaoAccount?.profile?.profileImageUrl ?? "") : Container()),
+            Text("isLogined? : ${vm.isLogined}"),
+            Text("id : ${vm.user?.id}"),
             ElevatedButton(
                 onPressed: () async {
                   await vm.login();

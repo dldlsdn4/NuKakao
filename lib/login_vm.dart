@@ -12,10 +12,10 @@ class LoginVM {
     isLogined = await _socialLogin.login();
     if (isLogined) {
       try {
-        User user = await UserApi.instance.me();
+        user = await UserApi.instance.me();
         print('사용자 정보 요청 성공'
-            '\n회원번호: ${user.id}'
-            '\n닉네임: ${user.kakaoAccount?.profile?.nickname}');
+            '\n회원번호: ${user?.id}'
+            '\n닉네임: ${user?.kakaoAccount?.profile?.nickname}');
       } catch (error) {
         print('사용자 정보 요청 실패 $error');
       }
