@@ -11,7 +11,14 @@ class LoginVM {
   Future login() async {
     isLogined = await _socialLogin.login();
     if (isLogined) {
-      user = await UserApi.instance.me();
+      try {
+        User user = await UserApi.instance.me();
+        print('사용자 정보 요청 성공'
+            '\n회원번호: ${user.id}'
+            '\n닉네임: ${user.kakaoAccount?.profile?.nickname}');
+      } catch (error) {
+        print('사용자 정보 요청 실패 $error');
+      }
     }
   }
 

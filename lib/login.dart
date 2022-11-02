@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kakao_flutter_sdk_user/kakao_flutter_sdk_user.dart';
 import 'package:nukakao/kakao_login.dart';
 import 'package:nukakao/login_vm.dart';
 
@@ -19,8 +20,9 @@ class _NakaoLoginState extends State<NakaoLogin> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.network(vm.user?.kakaoAccount?.profile?.profileImageUrl ?? ""),
+            // Image.network(vm.user?.kakaoAccount?.profile?.profileImageUrl ?? ""),
             Text("${vm.isLogined}"),
+            Text("${vm.user?.id}"),
             ElevatedButton(
                 onPressed: () async {
                   await vm.login();
