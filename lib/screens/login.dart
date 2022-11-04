@@ -35,6 +35,12 @@ class _NakaoLoginState extends State<NakaoLogin> {
                   setState(() {});
                 },
                 child: const Text("Logout")),
+            vm.isLogined
+                ? ElevatedButton(
+                    onPressed: () {},
+                    child: const Text("push notifications"),
+                  )
+                : const SizedBox(),
           ],
         ),
       ),
