@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kakao_flutter_sdk_user/kakao_flutter_sdk_user.dart';
-import 'package:nukakao/screen/login.dart';
+import 'package:nukakao/screens/login.dart';
 import 'package:nukakao/resources/app_theme.dart';
 
 void main() {

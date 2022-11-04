@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kakao_flutter_sdk_user/kakao_flutter_sdk_user.dart';
-import 'package:nukakao/screen/kakao_login.dart';
-import 'package:nukakao/screen/login_vm.dart';
+import 'package:nukakao/screens/kakao_login.dart';
+import 'package:nukakao/screens/login_vm.dart';
 
 class NakaoLogin extends StatefulWidget {
   const NakaoLogin({super.key});
